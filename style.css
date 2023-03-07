@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --black: #545454;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --thickerblue: #6793e6;
+    --babyblue: #8AAAE5;
+    --aqua: #FEE715FF;
+    --white: #ffffff;
+    --font-size: 1.3rem;
+    --mono: "Ubuntu Mono", monospace;
+    --sans: Open Sans, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--sans);
+    background-color: #edf1f5;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+#intro {
+    padding: 4rem 2rem 10rem 2rem;
+}
+
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#intro .name {
+    font-family: var(--mono);
+}
+
+.name span {
+    font-family: var(--sans);
+    color: var(--aqua);
+    font-size: 3rem;
+    display: block;
+}
+
+#intro h2 {
+    font-size: 3rem;
+}
+
+#contact {
+ width: 400px;
+ text-align: center;
+ margin: 0 auto; 
+ padding: 2rem 0;
+}
+
+
+/* NAVBAR */
+
+nav {
+    font-family: var(--sans);
+    font-size: 80%;
+    font-weight: 600;
+    padding: 2rem;
+}
+
+nav h1 a {
+    font-family: var(--sans);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav li:first-child {
+   flex-basis: 100%; 
+   text-align: center;
+}
+
+nav ul li li {
+    color: #900000;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: var(--black);
+    display: block;
+}
+
+nav a:hover {
+    color: #900000;
+}
+
+/* SECTION STYLING */
+
+.info p {
+    text-align: left;
+    background-color: var(--white);
+    color: var(--black);
+    width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+.content {
+    margin: 0 auto;
+    width: 250px;
+}
+
+.content p {
+   text-align: center;
+   background-color: #b33a49;
+   padding: 0.8rem;
+   border-radius: 10px;
+   margin-top: 2rem;
+}
+
+.content p:hover {
+    background-color: #b61729;
+}
+
+.content p a {
+   text-decoration: none;
+    color: var(--white);
+    display: block; 
+}
+
+span a {
+    color: #900000;
+}
+
+
+@media (min-width: 850px) {
+    nav {
+        max-width: 1200px;
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+}
